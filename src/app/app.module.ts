@@ -19,6 +19,8 @@ import { WithdrawalModule } from './modules/withdrawal/withdrawal.module';
 import { AccountModule } from './modules/account/account.module';
 import { SignModule } from './modules/sign/sign.module';
 import { LoginModule } from './modules/login/login.module';
+import { SignInComponent } from './main_components/sign-in/sign-in.component';
+import { LogInComponent } from './main_components/log-in/log-in.component';
 
 
 @NgModule({
@@ -32,7 +34,9 @@ import { LoginModule } from './modules/login/login.module';
     //WithFormComponent,
     //SettingsComponent,
     //ActionButtonsComponent,
-    PageNotFoundComponent
+    PageNotFoundComponent,
+    SignInComponent,
+    LogInComponent
   ],
   imports: [
     BrowserModule,
