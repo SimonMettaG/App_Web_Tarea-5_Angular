@@ -35,8 +35,8 @@ import { LogInComponent } from './main_components/log-in/log-in.component';
     //SettingsComponent,
     //ActionButtonsComponent,
     PageNotFoundComponent,
-    SignInComponent,
-    LogInComponent
+    //SignInComponent,
+    //LogInComponent
   ],
   imports: [
     BrowserModule,
