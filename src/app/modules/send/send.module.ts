@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { SendFormComponent } from 'src/app/main_components/send-form/send-form.component';
+import { SendRoutingModule } from './send-routing.module';
 //import { BalanceComponent } from 'src/app/main_components/balance/balance.component';
 
 
@@ -10,7 +11,8 @@ import { SendFormComponent } from 'src/app/main_components/send-form/send-form.c
     //BalanceComponent, 
     SendFormComponent],
   imports: [
-    CommonModule
+    CommonModule,
+    SendRoutingModule
   ]
 })
 export class SendModule { }

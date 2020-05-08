@@ -7,6 +7,7 @@ const routes: Routes = [
   {path: 'Home', loadChildren: './modules/home/home.module#HomeModule'},
   {path: 'Send', loadChildren: './modules/send/send.module#SendModule'},
   {path: 'Withdrawal', loadChildren: './modules/withdrawal/withdrawal.module#WithdrawalModule'},
+  {path: 'Account', loadChildren: './modules/account/account.module#AccountModule'},
   {path: '**', component: PageNotFoundComponent }
 ];
 
