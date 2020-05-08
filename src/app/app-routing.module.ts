@@ -1,10 +1,13 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import { NavComponent } from './nav/nav.component';
+import {PageNotFoundComponent} from './main_components/page-not-found/page-not-found.component'
 
 
 const routes: Routes = [
-	{path: '**', component:NavComponent}
+  {path: 'Home', loadChildren: './modules/home/home.module#HomeModule'},
+  {path: 'Send', loadChildren: './modules/send/send.module#SendModule'},
+  {path: 'Withdrawal', loadChildren: './modules/withdrawal/withdrawal.module#WithdrawalModule'},
+  {path: '**', component: PageNotFoundComponent }
 ];
 
 @NgModule({

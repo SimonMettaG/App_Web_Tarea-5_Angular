@@ -3,32 +3,47 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { BalanceComponent } from './balance/balance.component';
-import { NavComponent } from './nav/nav.component';
+import { BalanceComponent } from './main_components/balance/balance.component';
+import { NavComponent } from './main_components/nav/nav.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { FootComponent } from './foot/foot.component';
-import { InfoTableComponent } from './info-table/info-table.component';
-import { SendFormComponent } from './send-form/send-form.component';
-import { WithFormComponent } from './with-form/with-form.component';
-import { SettingsComponent } from './settings/settings.component';
-import { ActionButtonsComponent } from './action-buttons/action-buttons.component';
+import { FootComponent } from './main_components/foot/foot.component';
+import { InfoTableComponent } from './main_components/info-table/info-table.component';
+import { SendFormComponent } from './main_components/send-form/send-form.component';
+import { WithFormComponent } from './main_components/with-form/with-form.component';
+import { SettingsComponent } from './main_components/settings/settings.component';
+import { ActionButtonsComponent } from './main_components/action-buttons/action-buttons.component';
+import { PageNotFoundComponent } from './main_components/page-not-found/page-not-found.component';
+import { HomeModule } from './modules/home/home.module';
+import { SendModule } from './modules/send/send.module';
+import { WithdrawalModule } from './modules/withdrawal/withdrawal.module';
+import { AccountModule } from './modules/account/account.module';
+import { SignModule } from './modules/sign/sign.module';
+import { LoginModule } from './modules/login/login.module';
+
 
 @NgModule({
   declarations: [
     AppComponent,
-    BalanceComponent,
+    //BalanceComponent,
     NavComponent,
     FootComponent,
-    InfoTableComponent,
-    SendFormComponent,
-    WithFormComponent,
-    SettingsComponent,
-    ActionButtonsComponent
+    //InfoTableComponent,
+    //SendFormComponent,
+    //WithFormComponent,
+    //SettingsComponent,
+    //ActionButtonsComponent,
+    PageNotFoundComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    HomeModule,
+    SendModule,
+    WithdrawalModule,
+    AccountModule,
+    SignModule,
+    LoginModule
   ],
   providers: [],
   bootstrap: [AppComponent]
