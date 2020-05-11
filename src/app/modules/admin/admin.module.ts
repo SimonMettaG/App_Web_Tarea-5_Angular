@@ -4,7 +4,7 @@ import { AdminRoutingModule } from './admin-routing.module';
 import { NavComponent } from './components/nav/nav.component';
 import { BalanceComponent } from './components/balance/balance.component';
 import { InfoTableComponent } from './components/info-table/info-table.component';
-
+//Comment
 
 @NgModule({
   declarations: [NavComponent, BalanceComponent, InfoTableComponent],
