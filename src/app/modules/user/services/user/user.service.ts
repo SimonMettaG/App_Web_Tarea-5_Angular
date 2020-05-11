@@ -14,5 +14,10 @@ export class UserService {
     return of(users)
   }
 
+  getMainUser(): Observable<User>{
+    let user :User = new User ('Luis', '123', 'luis@gmail.com', 500);
+    return of(user)
+  }
+
   constructor() { }
 }
