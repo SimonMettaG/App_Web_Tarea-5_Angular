@@ -10,6 +10,15 @@ import { LoginModule } from './modules/login/login.module';
 import { AdminModule } from './modules/admin/admin.module';
 import { UserModule } from './modules/user/user.module';
 
+import {registerLocaleData} from '@angular/common';
+import localesMX from '@angular/common/locales/es-MX';
+import localeBR from '@angular/common/locales/pt';
+import localeUS from '@angular/common/locales/en';
+
+registerLocaleData(localesMX, 'es-MX');
+registerLocaleData(localeBR, 'pt');
+registerLocaleData(localeUS, 'en');
+
 
 @NgModule({
   declarations: [
