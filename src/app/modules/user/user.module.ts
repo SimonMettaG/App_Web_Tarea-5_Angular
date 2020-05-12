@@ -8,6 +8,7 @@ import { SendFormComponent } from './components/send-form/send-form.component';
 import { WithFormComponent } from './components/with-form/with-form.component';
 import { SettingsComponent } from './components/settings/settings.component';
 import { ActionButtonsComponent } from './components/action-buttons/action-buttons.component';
+import { ReactiveFormsModule } from '@angular/forms' 
 
 
 
@@ -15,7 +16,8 @@ import { ActionButtonsComponent } from './components/action-buttons/action-butto
   declarations: [NavComponent, BalanceComponent, InfoTableComponent, SendFormComponent, WithFormComponent, SettingsComponent, ActionButtonsComponent],
   imports: [
     CommonModule,
-    UserRoutingModule
+    UserRoutingModule,
+    ReactiveFormsModule,
   ]
 })
 export class UserModule { }
